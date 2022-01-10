@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1E166A7A2785803B00521F72 /* Binary Search Tree Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Binary Search Tree Algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E166A7A2785803B00521F72 /* Binary Search Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Binary Search Tree"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E166A7D2785803B00521F72 /* main_bst.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_bst.cpp; sourceTree = "<group>"; };
 		1E166A842785813700521F72 /* BST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
 		1E166A852785817D00521F72 /* BSTNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTNode.h; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		1E166A712785803B00521F72 = {
 			isa = PBXGroup;
 			children = (
-				1E166A7C2785803B00521F72 /* BST */,
+				1E166A7C2785803B00521F72 /* src */,
 				1E166A7B2785803B00521F72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,27 +51,27 @@
 		1E166A7B2785803B00521F72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E166A7A2785803B00521F72 /* Binary Search Tree Algorithm */,
+				1E166A7A2785803B00521F72 /* Binary Search Tree */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E166A7C2785803B00521F72 /* BST */ = {
+		1E166A7C2785803B00521F72 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				1E166A7D2785803B00521F72 /* main_bst.cpp */,
 				1E166A842785813700521F72 /* BST.h */,
 				1E166A852785817D00521F72 /* BSTNode.h */,
 			);
-			path = BST;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E166A792785803B00521F72 /* Binary Search Tree Algorithm */ = {
+		1E166A792785803B00521F72 /* Binary Search Tree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E166A812785803B00521F72 /* Build configuration list for PBXNativeTarget "Binary Search Tree Algorithm" */;
+			buildConfigurationList = 1E166A812785803B00521F72 /* Build configuration list for PBXNativeTarget "Binary Search Tree" */;
 			buildPhases = (
 				1E166A762785803B00521F72 /* Sources */,
 				1E166A772785803B00521F72 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = "Binary Search Tree Algorithm";
+			name = "Binary Search Tree";
 			productName = Hw2;
-			productReference = 1E166A7A2785803B00521F72 /* Binary Search Tree Algorithm */;
+			productReference = 1E166A7A2785803B00521F72 /* Binary Search Tree */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1E166A752785803B00521F72 /* Build configuration list for PBXProject "Binary Search Tree Algorithm" */;
+			buildConfigurationList = 1E166A752785803B00521F72 /* Build configuration list for PBXProject "Binary Search Tree" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E166A792785803B00521F72 /* Binary Search Tree Algorithm */,
+				1E166A792785803B00521F72 /* Binary Search Tree */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E166A752785803B00521F72 /* Build configuration list for PBXProject "Binary Search Tree Algorithm" */ = {
+		1E166A752785803B00521F72 /* Build configuration list for PBXProject "Binary Search Tree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E166A7F2785803B00521F72 /* Debug */,
@@ -273,7 +273,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E166A812785803B00521F72 /* Build configuration list for PBXNativeTarget "Binary Search Tree Algorithm" */ = {
+		1E166A812785803B00521F72 /* Build configuration list for PBXNativeTarget "Binary Search Tree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E166A822785803B00521F72 /* Debug */,

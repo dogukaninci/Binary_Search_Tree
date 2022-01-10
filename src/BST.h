@@ -141,12 +141,87 @@ void BST<T>::insert(const T &data) {
 
 template<class T>
 void BST<T>::remove(const T &data) {
-    /* TODO */
+    BSTNode<T> *curr = new BSTNode<T>;
+    curr = search(data);
+    
+    if (curr == NULL) {
+        return;
+    }
+    // Node is leaf
+    if (curr->left == NULL && curr->right == NULL){
+        if (curr != root)
+        {
+            BSTNode<T> *parent = new BSTNode<T>;
+            parent = findParent(curr);
+            if (parent->left == curr) {
+                parent->left = NULL;
+            }
+            else {
+                parent->right = NULL;
+            }
+        }
+        else {
+            root = NULL;
+        }
+    }
+    // Node has one child to the left
+    if (curr->left && curr->right == NULL){
+        BSTNode<T> *parent = new BSTNode<T>;
+        parent = findParent(curr);
+        if (parent->left == curr) {
+            parent->left = curr->left;
+        }
+        else {
+            parent->right = curr->left;
+        }
+    }
+    // Node has one child to the left
+    if (curr->left == NULL && curr->right){
+        BSTNode<T> *parent = new BSTNode<T>;
+        parent = findParent(curr);
+        if (parent->left == curr) {
+            parent->left = curr->right;
+        }
+        else {
+            parent->right = curr->right;
+        }
+    }
+    
+    // Node has two child
+    if(curr->right && curr->left ){
+        BSTNode<T> *succ = new BSTNode<T>;
+        succ = getSuccessor(curr, inorder);
+        BSTNode<T> *parent = new BSTNode<T>;
+        parent = findParent(curr);
+        if(succ == curr->right){
+            succ->left = curr->left;
+            if(curr == parent->right){
+                parent->right = succ;
+            }
+            else{
+                parent->left = succ;
+            }
+        }
+        else if(curr == parent->right){
+            curr->right->left = succ->right;
+            succ->left = curr->left;
+            succ->right = curr->right;
+            parent->right = succ;
+        }
+        else{
+            curr->right->left = succ->right;
+            succ->left = curr->left;
+            succ->right = curr->right;
+            parent->left = succ;
+        }
+    }
+    
+    
 }
 
 template<class T>
 void BST<T>::removeAllNodes() {
-    /* TODO */
+    root = NULL;
 }
 
 template<class T>

@@ -8,7 +8,6 @@ int main() {
     tree.print(inorder);
     //tree.print(preorder);
     //tree.print(postorder);
-
     tree.insert(25);
     tree.insert(15);
     tree.insert(50);
@@ -24,12 +23,15 @@ int main() {
     tree.insert(44);
     tree.insert(66);
     tree.insert(90);
+    tree.insert(42);
+    tree.insert(43);
     
-    //tree.remove(12);
-    //tree.print(inorder);
+    tree.remove(35);
+    tree.print(inorder);
     //std::cout << tree.getSuccessor(tree.search(24), postorder)->data << std::endl;
     
     //tree.print(preorder);
     //tree.print(postorder);
     return 0;
 }
+
